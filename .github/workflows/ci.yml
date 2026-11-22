@@ -8,10 +8,8 @@ on:
 permissions:
   contents: read
 
-# Private repositories need paid Actions minutes, so the jobs run once the repository is public.
 jobs:
   check:
-    if: ${{ !github.event.repository.private }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -26,7 +24,6 @@ jobs:
       - run: scripts/check.sh
 
   e2e:
-    if: ${{ !github.event.repository.private }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
