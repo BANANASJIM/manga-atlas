@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>MangaAtlas</title>
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/app.css">
+  <script type="module" src="/static/js/main.js"></script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" id="brand" href="/" data-link><span class="logo" aria-hidden="true"></span><span class="brand-name"></span></a>
+    <div class="search" id="search">
+      <input id="q" type="text" role="combobox" autocomplete="off" spellcheck="false" enterkeyhint="search"
+             aria-autocomplete="list" aria-expanded="false" aria-controls="suggest-list">
+      <kbd class="slash" id="slash" aria-hidden="true"></kbd>
+      <div class="suggest" id="suggest" hidden>
+        <div class="sg-list" id="suggest-list" role="listbox"></div>
+        <div class="sg-foot" id="suggest-foot"></div>
+      </div>
+    </div>
+    <label class="switch" id="read-wrap"><input type="checkbox" id="read" role="switch"><span class="track" aria-hidden="true"></span><span class="switch-label"></span></label>
+    <label class="switch" id="fav-wrap"><input type="checkbox" id="fav" role="switch"><span class="track" aria-hidden="true"></span><span class="switch-label"></span></label>
+    <a class="suwa" id="suwa" target="_blank" rel="noopener" hidden><span class="dot" aria-hidden="true"></span><span class="suwa-name"></span></a>
+  </header>
+  <div class="banner" id="banner" role="status" hidden></div>
+  <div class="busy-bar" aria-hidden="true"></div>
+  <main id="app"></main>
+</body>
+</html>

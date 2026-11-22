@@ -1,0 +1,10 @@
+# Weekly rebuild. The Bangumi Archive publishes on Wednesday around 05:00 GMT+8.
+[Unit]
+Description=Weekly MangaAtlas catalogue rebuild
+
+[Timer]
+OnCalendar=Wed *-*-* 07:00:00 Asia/Shanghai
+Persistent=true
+
+[Install]
+WantedBy=timers.target

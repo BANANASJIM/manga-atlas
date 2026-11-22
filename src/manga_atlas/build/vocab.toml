@@ -1,0 +1,231 @@
+# Tag rules for the catalogue build. Every spelling here is normalized before use
+# (NFKC, Traditional -> Simplified, casefold), so variants need not be listed.
+
+# Not tags: the medium itself, editions, years, volume counts, personal notes.
+noise = [
+  "漫画", "漫画系列", "系列", "单行本", "漫画单行本", "单卷", "单本", "漫画单卷", "漫画分卷",
+  "纸质书", "电子书", "マンガ", "コミックス", "コミック", "一般コミック", "comic", "comics",
+  "漫画书", "日本漫画书", "台版", "港版", "日版", "简体中文版", "文库本", "全彩", "黑白",
+  "複数巻", "特典", "限定流通", "无限", "无cp", "已购", "想读", "收藏", "搜索用", "¬", "만화",
+]
+noise_patterns = [
+  '^\d{2,4}$',
+  '^\d{2,4}(年|年代|s)$',
+  '^(全|第)?[\d一二三四五六七八九十百]+[卷巻册话集]$',
+  '^isbn',
+  '^[\d-]{8,}$',
+]
+
+# A tag ending in one of these merges into the shorter tag when that one exists ("恋爱漫画" -> "恋爱").
+strip_suffixes = ["漫画", "マンガ"]
+
+# Bangumi's official tags that mark adult works (user tags are in config: r18_user_tags).
+r18_official = ["R18"]
+
+# Region values; their tags fill work.region instead of the tag list. Status tags likewise fill
+# work.status (labels in schema.py).
+regions = ["日本", "韩国", "中国", "美国", "台湾", "香港", "法国", "泰国"]
+
+# Region for titles whose script gives it away, when tags and publishers say nothing.
+[script_regions]
+kana = "日本"
+hangul = "韩国"
+
+# variant = canonical.
+[aliases]
+"日漫" = "日本"
+"韩漫" = "韩国"
+"国漫" = "中国"
+"国产" = "中国"
+"港漫" = "香港"
+"台漫" = "台湾"
+"美漫" = "美国"
+"完结" = "已完结"
+"连载" = "连载中"
+"停更" = "停载"
+# Decided 2026-11-20: GL -> 百合, 爱情 -> 恋爱, 耽美 -> BL; 惊悚 and 恐怖 stay apart.
+"gl" = "百合"
+"yuri" = "百合"
+"爱情" = "恋爱"
+"耽美" = "BL"
+"blコミック" = "BL"
+"少女漫" = "少女"
+"少年漫" = "少年"
+"青年漫" = "青年"
+"webtoon" = "条漫"
+"轻小说改" = "小说改"
+"轻改" = "小说改"
+"网络小说改" = "小说改"
+"小说改编" = "小说改"
+"sf" = "科幻"
+"性转换" = "性转"
+"ts" = "性转"
+# Japanese Wikipedia's words for tags Bangumi has (see [jawiki]); 恋愛, 異世界, 推理, 妖怪, 少女
+# and the like fold by themselves.
+"ホラー" = "恐怖"
+"ギャグ" = "搞笑"
+"ファンタジー" = "奇幻"
+"ハイファンタジー" = "奇幻"
+"アクション" = "战斗"
+"バトル" = "战斗"
+"サスペンス" = "悬疑"
+"スリラー" = "惊悚"
+"ミステリー" = "推理"
+"冒険" = "冒险"
+"歴史" = "历史"
+"戦争" = "战争"
+"スポーツ" = "运动"
+"格闘技" = "格斗"
+"格闘" = "格斗"
+"野球" = "棒球"
+"麻雀" = "麻将"
+"ギャンブル" = "赌博"
+"グルメ" = "美食"
+"料理" = "美食"
+"料理・グルメ" = "美食"
+"音楽" = "音乐"
+"ゲーム" = "游戏"
+"学園" = "校园"
+"4コマ" = "四格"
+"ボーイズラブ" = "BL"
+"ティーンズラブ" = "TL"
+"児童" = "儿童"
+"ハーレム" = "后宫"
+"お色気" = "卖肉"
+"エロティック" = "エロ"
+"トランスセクシュアル" = "性转"
+"男の娘" = "伪娘"
+"メイド" = "女仆"
+"アイドル" = "偶像"
+"探偵" = "侦探"
+"ヤクザ" = "黑道"
+"ゾンビ" = "丧尸"
+"ヤンデレ" = "病娇"
+"デスゲーム" = "生存游戏"
+"サバイバル" = "生存"
+"文明崩壊後" = "末世"
+"転生" = "转生"
+"復讐" = "复仇"
+"家族" = "家庭"
+"魔法・呪術" = "魔法"
+"異世界（舞台）" = "异世界"
+"東京都（舞台）" = "東京（舞台）"
+"日本の小説原作" = "小说改"
+"小説原作" = "小说改"
+"ライトノベル原作" = "小说改"
+"ゲーム原作" = "游戏改"
+"アニメ原作" = "动画改"
+
+# Facet groups (like exhentai namespaces); other tags fall in "tag".
+[groups]
+origin = ["原创", "小说改", "游戏改", "动画改", "影视改", "漫画改"]
+audience = ["少女", "少年", "青年", "女性", "儿童", "乙女", "一般向", "BL", "TL"]
+genre = [
+  "恋爱", "百合", "奇幻", "校园", "穿越", "战斗", "职场", "搞笑", "运动", "日常", "科幻", "异世界",
+  "悬疑", "美食", "剧情", "冒险", "武侠", "惊悚", "恐怖", "后宫", "玄幻", "历史", "推理", "音乐",
+  "现实", "机战", "游戏", "都市", "仙侠", "军事", "猎奇",
+]
+format = ["短篇集", "短篇", "四格", "条漫", "电子单话", "同人志", "MOOK"]
+
+# Japanese Wikipedia (build/tagsources/jawiki.py). Patterns are Python regular expressions over a
+# category's name without "Category:". Tags Bangumi lacks go in the facet group "jawiki".
+[jawiki]
+# An article counts when a category says it is a manga ("…漫画", "…漫画作品", the "漫画作品 あ"
+# index) and none says it is a disambiguation page.
+manga = '漫画(作品)?$|^漫画作品 '
+reject = '曖昧さ回避'
+# Categories that never become tags, though a rule below matches them: settings nearly every
+# work shares.
+drop = ['^(日本|21世紀)を舞台']
+# Category -> tag: the first rule that matches decides, and a category no rule matches (years,
+# indexes, magazines, other media) gives nothing. {} in `name` is the pattern's `term`.
+rules = [
+  { match = '^(?P<term>.+)を舞台(とした|とする|にした)(漫画作品|漫画|作品)$', name = '{}（舞台）' },
+  # "日本の高校野球を題材とした漫画作品" is the sport's.
+  { match = '^日本の高校(?P<term>.+)を題材とした(漫画作品|漫画|作品)$', name = '{}' },
+  # What the work is about, or who its protagonist is: both its theme.
+  { match = '^(?P<term>.+)を((題材|主題|テーマ|主人公)(とした|とする|にした)|扱った)(漫画作品|漫画|作品)$', name = '{}' },
+  { match = '^(?P<term>.+)を原作とする(漫画作品|漫画)$', name = '{}原作' },
+  { match = '^(?P<term>文明崩壊後)の世界が描かれた(漫画作品|作品)$', name = '{}' },
+  # Genres named without "漫画".
+  { match = '^(?P<term>ダーク・ファンタジー|ブラック・コメディ|シュール・コメディ|ハードボイルド|ヤンデレ|魔法少女)$', name = '{}' },
+  # A genre ("ホラー漫画", "SF漫画作品"); not one magazine's, author's or series' ("…の漫画作品").
+  { match = '^(?P<term>[^のを]+)漫画(作品)?$', name = '{}' },
+]
+
+# ゆりみる (build/tagsources/yurimiru.py). Tags Bangumi lacks go in the facet group "yurimiru".
+[yurimiru]
+yuri = "百合"  # for works the site marks 恋愛百合, or sweet enough (config yurimiru_yuri_sweetness)
+sweetness = "糖度"  # the scale of its 百合成分表 that measures that
+volume = '\s*(第?\d+巻|[(（]\d+[)）])$'  # a volume number after a title
+
+# Its 67 tags, and what they are here, plus the 短編集 chip; other chips (連載中, アニメ化) are not tags.
+[yurimiru.tags]
+"学園" = "校园"
+"ドラマ・シリアス" = "剧情"
+"日常" = "日常"
+"コメディ" = "搞笑"
+"ファンタジー" = "奇幻"
+"ラブコメ" = "恋爱"
+"青春" = "青春"
+"アクション・バトル" = "战斗"
+"SF" = "科幻"
+"社会人" = "社会人"
+"人外・モンスター娘" = "人外"
+"部活" = "社团"
+"音楽・バンド" = "音乐"
+"同居・同棲" = "同居"
+"大人同士" = "成人之间"
+"アイドル" = "偶像"
+"スポーツ" = "运动"
+"片想い" = "单恋"
+"年の差" = "年龄差"
+"4コマ" = "四格"
+"ツンデレ" = "傲娇"
+"異世界" = "异世界"
+"ミステリー" = "推理"
+"ほのぼの" = "温馨"
+"心理サスペンス" = "心理悬疑"
+"女子校" = "女校"
+"三角関係" = "三角恋"
+"文芸・文学" = "文艺"
+"大学生" = "大学生"
+"幼馴染" = "幼驯染"
+"料理・グルメ" = "美食"
+"魔法少女" = "魔法少女"
+"ダーク" = "黑暗"
+"歴史・時代もの" = "历史"
+"旅" = "旅行"
+"感動" = "感人"
+"先輩後輩" = "前后辈"
+"同級生" = "同级生"
+"ホラー" = "恐怖"
+"お嬢様" = "大小姐"
+"ボーイッシュ" = "假小子"
+"田舎・地方" = "乡村"
+"メイド" = "女仆"
+"ギャル" = "辣妹"
+"きらら系" = "Kirara"
+"バディ" = "搭档"
+"声優・芸能界" = "演艺圈"
+"名作" = "名作"
+"百合ハーレム" = "百合后宫"
+"終末・ポストアポカリプス" = "末世"
+"お仕事もの" = "职场"
+"漫画家・創作" = "创作"
+"教師と生徒" = "师生"
+"ヤンデレ" = "病娇"
+"純愛" = "纯爱"
+"天文・サイエンス" = "天文"
+"悪役令嬢" = "恶役千金"
+"温泉・銭湯" = "温泉"
+"同人" = "同人"
+"お色気" = "卖肉"
+"主従" = "主从"
+"姉妹" = "姐妹"
+"配信" = "直播"
+"ドロドロ" = "狗血"
+"義姉妹" = "义姐妹"
+"夫婦・パートナー" = "伴侣"
+"ライバル" = "劲敌"
+"短編集" = "短篇集"

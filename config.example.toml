@@ -1,0 +1,99 @@
+# MangaAtlas settings. Copy this file to ~/.config/manga-atlas/config.toml ($XDG_CONFIG_HOME is
+# respected) and keep only what you change. Every field of `Settings` in src/manga_atlas/config.py
+# can be set here; an unknown key is an error.
+
+# port = 4568
+# suwayomi_url = "http://127.0.0.1:4567"
+# data_dir = "~/.local/share/manga-atlas"
+
+# Sources to check for each work, in this order. A `sources` list replaces the default one (the
+# publishers' own Japanese sites), so list every source you want. The ids below are those of the
+# Suwayomi extensions with these names; docs/configuration.md shows how to look up others.
+#
+#   id             the Suwayomi source id
+#   name           shown on the work page
+#   lang           "ja": search by the original Japanese title; "zh" (the default): Chinese
+#   enabled        false keeps the entry but never asks the source
+#   lists_authors  its search results name authors, so a title it lists may be searched elsewhere
+
+# A Chinese source: look up its id as docs/configuration.md shows, and uncomment.
+# [[sources]]
+# id = "<source id>"
+# name = "<name>"
+# lang = "zh"
+# lists_authors = true  # if its search results name authors
+
+[[sources]]
+id = "5161357527629843269"
+name = "Shonen Jump+"
+lang = "ja"
+
+[[sources]]
+id = "5726629019734498294"
+name = "Tonari no Young Jump"
+lang = "ja"
+
+[[sources]]
+id = "583369548372015159"
+name = "Magazine Pocket"
+lang = "ja"
+
+[[sources]]
+id = "5332604811772266259"
+name = "Comic Days"
+lang = "ja"
+
+[[sources]]
+id = "8083066303045184316"
+name = "Sunday Web Every"
+lang = "ja"
+
+[[sources]]
+id = "7948822981386785924"
+name = "Manga One"
+lang = "ja"
+
+[[sources]]
+id = "8396089563187142394"
+name = "KadoComi"
+lang = "ja"
+
+[[sources]]
+id = "697820552173578283"
+name = "Manga UP!"
+lang = "ja"
+
+[[sources]]
+id = "3322701627784242064"
+name = "Young Jump+"
+lang = "ja"
+
+[[sources]]
+id = "2126618372106431410"
+name = "Young Magazine"
+lang = "ja"
+
+[[sources]]
+id = "1467355738916791140"
+name = "Gangan Online"
+lang = "ja"
+
+[[sources]]
+id = "2937751339618832603"
+name = "Pixiv Comic"
+lang = "ja"
+
+[[sources]]
+id = "1452408892924080686"
+name = "Niconico Seiga"
+lang = "ja"
+
+[[sources]]
+id = "3118962894631295374"
+name = "Comic Gardo"
+lang = "ja"
+
+[[sources]]
+id = "7341666123577520203"
+name = "COMIC FUZ"
+lang = "ja"

@@ -1,0 +1,327 @@
+{
+  "built_at": "2026-11-18T05:00:00Z",
+  "catalog_works": 60825,
+  "sources": [
+    {"id": "zh-a", "name": "中文源甲"},
+    {"id": "zh-b", "name": "中文源乙"},
+    {"id": "zh-c", "name": "中文源丙"},
+    {"id": "5161357527629843269", "name": "Shonen Jump+", "lang": "ja"}
+  ],
+  "library": {
+    "categories": [{"id": 0, "name": "Default"}, {"id": 3, "name": "校园"}],
+    "entries": [
+      {"manga_id": 9101, "title": "終將成為妳", "work_id": 101, "categories": []},
+      {"manga_id": 9102, "title": "安達與島村", "work_id": 102, "categories": [3]},
+      {"manga_id": 9103, "title": "葬送的芙莉蓮", "work_id": 202, "categories": []},
+      {"manga_id": 9104, "title": "不在 Bangumi 的同人本", "work_id": null, "categories": []},
+      {"manga_id": 9105, "title": "櫻Trick", "work_id": 107, "categories": []}
+    ]
+  },
+  "tags": [
+    {"id": 1, "name": "百合", "grp": "genre", "official": true},
+    {"id": 2, "name": "校园", "grp": "genre", "official": true},
+    {"id": 3, "name": "恋爱", "grp": "genre", "official": true},
+    {"id": 4, "name": "恐怖", "grp": "genre", "official": true},
+    {"id": 5, "name": "悬疑", "grp": "genre", "official": true},
+    {"id": 6, "name": "奇幻", "grp": "genre", "official": true},
+    {"id": 7, "name": "科幻", "grp": "genre", "official": true},
+    {"id": 8, "name": "冒险", "grp": "genre", "official": true},
+    {"id": 9, "name": "搞笑", "grp": "genre", "official": true},
+    {"id": 10, "name": "美食", "grp": "genre", "official": false},
+    {"id": 11, "name": "日常", "grp": "genre", "official": false},
+    {"id": 12, "name": "治愈", "grp": "genre", "official": false},
+    {"id": 13, "name": "热血", "grp": "genre", "official": false},
+    {"id": 14, "name": "青春", "grp": "genre", "official": false},
+    {"id": 15, "name": "战斗", "grp": "genre", "official": false},
+    {"id": 16, "name": "少年", "grp": "audience", "official": true},
+    {"id": 17, "name": "少女", "grp": "audience", "official": true},
+    {"id": 18, "name": "青年", "grp": "audience", "official": true},
+    {"id": 19, "name": "GL", "grp": "audience", "official": false},
+    {"id": 20, "name": "神作", "grp": "tag", "official": false},
+    {"id": 21, "name": "职场", "grp": "tag", "official": false},
+    {"id": 22, "name": "百合向", "grp": "tag", "official": false},
+    {"id": 23, "name": "百合日常", "grp": "tag", "official": false},
+    {"id": 24, "name": "高等学校（舞台）", "grp": "jawiki", "official": false},
+    {"id": 25, "name": "ディストピア", "grp": "jawiki", "official": false},
+    {"id": 26, "name": "悪魔", "grp": "jawiki", "official": false},
+    {"id": 27, "name": "前后辈", "grp": "yurimiru", "official": false},
+    {"id": 28, "name": "社会人", "grp": "yurimiru", "official": false}
+  ],
+  "aliases": {
+    "gl": "GL",
+    "校園": "校园",
+    "爱情": "恋爱"
+  },
+  "people": [
+    {"id": 1, "name": "仲谷鳰"},
+    {"id": 2, "name": "入间人间"},
+    {"id": 3, "name": "志村贵子"},
+    {"id": 4, "name": "椋木ななつ"},
+    {"id": 5, "name": "竹嶋えく"},
+    {"id": 6, "name": "未幡"},
+    {"id": 7, "name": "タチ"},
+    {"id": 8, "name": "サブロウタ"},
+    {"id": 9, "name": "今野绪雪"},
+    {"id": 10, "name": "高嶋ひろみ"},
+    {"id": 11, "name": "荒川弘"},
+    {"id": 12, "name": "山田钟人"},
+    {"id": 13, "name": "阿部司"},
+    {"id": 14, "name": "九井谅子"},
+    {"id": 15, "name": "谏山创"},
+    {"id": 16, "name": "藤本树"},
+    {"id": 17, "name": "小野不由美"},
+    {"id": 18, "name": "藤崎龙"},
+    {"id": 19, "name": "楳图一雄"},
+    {"id": 20, "name": "伊藤润二"},
+    {"id": 21, "name": "海法纪光"},
+    {"id": 22, "name": "千叶サドル"},
+    {"id": 23, "name": "米二"},
+    {"id": 24, "name": "SIU"},
+    {"id": 25, "name": "仙人掌"},
+    {"id": 90, "name": "KADOKAWA"},
+    {"id": 91, "name": "月刊コミック電撃大王"}
+  ],
+  "works": [
+    {
+      "id": 101, "title": "终将成为你", "name": "やがて君になる", "aliases": ["终将成为妳", "Bloom Into You"],
+      "year": 2015, "status": "已完结", "region": "日本", "score": 8.9, "votes": 2760, "rank": 12, "heat": 9100, "vols": 8,
+      "people": [[1, "作者"], [90, "出版社"], [91, "连载杂志"]],
+      "official": ["百合", "校园", "恋爱"],
+      "user": {"神作": 328, "治愈": 91, "少女": 64, "日常": 40, "青春": 30, "GL": 22},
+      "pages": {"jawiki": {"title": "やがて君になる", "url": "https://ja.wikipedia.org/wiki/%E3%82%84%E3%81%8C%E3%81%A6%E5%90%9B%E3%81%AB%E3%81%AA%E3%82%8B", "tags": ["恋爱", "百合", "高等学校（舞台）"]}, "yurimiru": {"title": "やがて君になる", "url": "https://www.yurimiru.com/works/00000000-0000-4000-8000-000000000101/vol/1", "tags": ["校园", "百合", "前后辈"]}},
+      "summary": "不懂恋爱心动的高一新生小糸侑，遇上了不会喜欢任何人的学生会长七海灯子。\n两个人约好，就这样一起走下去。",
+      "relations": [
+        {"rel": "外传", "id": 111},
+        {"rel": "外传", "id": 900102, "title": "终将成为你 关于佐伯沙弥香", "type": "小说"},
+        {"rel": "改编", "id": 900101, "title": "终将成为你", "type": "动画"},
+        {"rel": "单行本", "id": 900201, "title": "终将成为你 (1)", "type": "漫画"},
+        {"rel": "单行本", "id": 900202, "title": "终将成为你 (2)", "type": "漫画"},
+        {"rel": "单行本", "id": 900203, "title": "终将成为你 (3)", "type": "漫画"},
+        {"rel": "单行本", "id": 900204, "title": "终将成为你 (4)", "type": "漫画"},
+        {"rel": "单行本", "id": 900205, "title": "终将成为你 (5)", "type": "漫画"},
+        {"rel": "单行本", "id": 900206, "title": "终将成为你 (6)", "type": "漫画"},
+        {"rel": "单行本", "id": 900207, "title": "终将成为你 (7)", "type": "漫画"},
+        {"rel": "单行本", "id": 900208, "title": "终将成为你 (8)", "type": "漫画"}
+      ],
+      "check": [["no"], ["yes", 5101, "终将成为你"], ["maybe", 5102, "终将成为妳"], ["down"]],
+      "cover": true
+    },
+    {
+      "id": 102, "title": "安达与岛村", "name": "安達としまむら", "aliases": [],
+      "year": 2019, "status": "连载中", "region": "日本", "score": 7.8, "votes": 600, "rank": 120, "heat": 5000, "vols": 4,
+      "people": [[2, "原作"]],
+      "official": ["百合", "校园"],
+      "user": {"日常": 40, "青春": 33, "恋爱": 20},
+      "pages": {"jawiki": {"title": "安達としまむら", "url": "https://ja.wikipedia.org/wiki/%E5%AE%89%E9%81%94%E3%81%A8%E3%81%97%E3%81%BE%E3%82%80%E3%82%89", "tags": ["百合", "高等学校（舞台）"]}, "yurimiru": {"title": "安達としまむら", "url": "https://www.yurimiru.com/works/00000000-0000-4000-8000-000000000102/vol/1", "tags": ["校园", "百合"]}},
+      "summary": "体育馆二楼是两个人逃课的地方。",
+      "check": [["yes", 5201, "安达与岛村"], ["yes", 5202, "安达与岛村", null], ["no"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 103, "title": "青之花", "name": "青い花", "aliases": [],
+      "year": 2004, "status": "已完结", "region": "日本", "score": 8.5, "votes": 900, "rank": 45, "heat": 4000, "vols": 8,
+      "people": [[3, "作者"]],
+      "official": ["百合", "校园"],
+      "user": {"恋爱": 30, "治愈": 12},
+      "summary": "镰仓的两所女校，久别重逢的青梅竹马。",
+      "check": [["yes", 5301, "青之花"], ["no", 5302, "青之花"], ["no"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 104, "title": "天使降临到了我身边！", "name": "私に天使が舞い降りた！", "aliases": ["天使降临到我身边"],
+      "year": 2016, "status": "连载中", "region": "日本", "score": 8.2, "votes": 1200, "rank": 80, "heat": 8000, "vols": 12,
+      "people": [[4, "作者"]],
+      "official": ["百合", "搞笑"],
+      "user": {"日常": 80, "治愈": 50},
+      "summary": "怕生的大学生美弥子，遇见了妹妹的同学花。",
+      "check": [["maybe", 5401, "天使降临到我身边"], ["no"], ["no"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 105, "title": "恋语轻唱", "name": "ささやくように恋を唄う", "aliases": [],
+      "year": 2018, "status": "连载中", "region": "日本", "score": 8.1, "votes": 400, "rank": 150, "heat": 3000, "vols": 10,
+      "people": [[5, "作者"]],
+      "official": ["百合", "校园", "恋爱"],
+      "user": {"青春": 20},
+      "summary": "新生欢迎会上的一首歌，让两个人走到了一起。",
+      "cover": true
+    },
+    {
+      "id": 106, "title": "我的百合是工作！", "name": "私の百合はお仕事です！", "aliases": [],
+      "year": 2016, "status": "连载中", "region": "日本", "score": 7.9, "votes": 500, "rank": 200, "heat": 3500, "vols": 13,
+      "people": [[6, "作者"]],
+      "official": ["百合"],
+      "user": {"职场": 30, "恋爱": 12, "搞笑": 5},
+      "pages": {"yurimiru": {"title": "私の百合はお仕事です！", "url": "https://www.yurimiru.com/works/00000000-0000-4000-8000-000000000106/vol/1", "tags": ["百合", "社会人"]}},
+      "summary": "在百合主题咖啡馆打工的少女们。",
+      "check": [["yes", 5601, "我的百合是工作！"], ["no"], ["maybe", 5602, "我的百合是工作"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 107, "title": "樱Trick", "name": "桜Trick", "aliases": [],
+      "year": 2012, "status": "已完结", "region": "日本", "score": 7.9, "votes": 700, "rank": 210, "heat": 4200, "vols": 8,
+      "people": [[7, "作者"]],
+      "official": ["百合", "校园"],
+      "user": {"搞笑": 22, "日常": 10},
+      "summary": "升上高中的两个人，用一个秘密确认彼此。",
+      "check": [["no"], ["yes", 5701, "樱Trick"], ["no"], ["down"]],
+      "cover": false
+    },
+    {
+      "id": 108, "title": "Citrus", "name": "citrus", "aliases": ["柑橘味香气"],
+      "year": 2012, "status": "已完结", "region": "日本", "score": 7.4, "votes": 800, "rank": 600, "heat": 6000, "vols": 10,
+      "people": [[8, "作者"]],
+      "official": ["百合", "校园", "恋爱"],
+      "user": {"GL": 40},
+      "summary": "转学第一天就和学生会长结下了梁子。",
+      "check": [["maybe", 5801, "柑橘味香气"], ["no"], ["no"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 109, "title": "玛利亚的凝望", "name": "マリア様がみてる", "aliases": ["圣母在上"],
+      "year": 2004, "status": "已完结", "region": "日本", "score": 7.6, "votes": 300, "rank": 400, "heat": 2000, "vols": 7,
+      "people": [[9, "原作"]],
+      "official": ["百合", "校园"],
+      "user": {"少女": 10},
+      "summary": "莉莉安女学园的姐妹制度。",
+      "cover": true
+    },
+    {
+      "id": 110, "title": "加濑同学", "name": "加瀬さん", "aliases": [],
+      "year": 2011, "status": "已完结", "region": "日本", "score": 8.0, "votes": 350, "rank": 170, "heat": 2500, "vols": 5,
+      "people": [[10, "作者"]],
+      "official": ["百合", "校园", "恋爱"],
+      "user": {},
+      "summary": "园艺部的山田和田径部的加濑。",
+      "cover": true
+    },
+    {
+      "id": 111, "title": "终将成为你 官方漫画选集", "name": "やがて君になる 公式コミックアンソロジー", "aliases": [],
+      "year": 2018, "status": "已完结", "region": "日本", "score": 7.0, "votes": 90, "rank": null, "heat": 400, "vols": 1,
+      "people": [[1, "原作"]],
+      "official": ["百合"],
+      "user": {},
+      "summary": "多位作者绘制的短篇合集。",
+      "cover": true
+    },
+    {
+      "id": 201, "title": "钢之炼金术师", "name": "鋼の錬金術師", "aliases": ["钢炼", "Fullmetal Alchemist"],
+      "year": 2001, "status": "已完结", "region": "日本", "score": 9.2, "votes": 8000, "rank": 1, "heat": 20000, "vols": 27,
+      "people": [[11, "作者"]],
+      "official": ["奇幻", "冒险", "少年"],
+      "user": {"神作": 900, "热血": 300, "战斗": 100},
+      "summary": "为了找回失去的身体，兄弟二人踏上旅途。",
+      "relations": [{"rel": "改编", "id": 900301, "title": "钢之炼金术师 FULLMETAL ALCHEMIST", "type": "动画"}],
+      "check": [["yes", 6101, "钢之炼金术师"], ["yes", 6102, "钢之炼金术师"], ["yes", 6103, "鋼之鍊金術師"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 202, "title": "葬送的芙莉莲", "name": "葬送のフリーレン", "aliases": ["芙莉莲"],
+      "year": 2020, "status": "连载中", "region": "日本", "score": 9.0, "votes": 3000, "rank": 3, "heat": 18000, "vols": 13,
+      "people": [[12, "原作"], [13, "作画"]],
+      "official": ["奇幻", "冒险"],
+      "user": {"治愈": 120, "神作": 200},
+      "summary": "勇者一行打倒魔王之后，精灵魔法使的旅程才刚开始。",
+      "check": [["yes", 6201, "葬送的芙莉莲"], ["yes", 6202, "葬送的芙莉莲"], ["no"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 203, "title": "迷宫饭", "name": "ダンジョン飯", "aliases": [],
+      "year": 2014, "status": "已完结", "region": "日本", "score": 9.0, "votes": 2500, "rank": 4, "heat": 15000, "vols": 14,
+      "people": [[14, "作者"]],
+      "official": ["奇幻", "美食"],
+      "user": {"搞笑": 100, "冒险": 80},
+      "summary": "在迷宫里就地取材，把魔物做成料理。",
+      "check": [["yes", 6301, "迷宫饭"], ["no"], ["no"], ["down"]], "stale": true,
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 204, "title": "进击的巨人", "name": "進撃の巨人", "aliases": [],
+      "year": 2009, "status": "已完结", "region": "日本", "score": 8.9, "votes": 6000, "rank": 6, "heat": 19000, "vols": 34,
+      "people": [[15, "作者"]],
+      "official": ["奇幻", "少年"],
+      "user": {"热血": 300, "悬疑": 100, "战斗": 200},
+      "pages": {"jawiki": {"title": "進撃の巨人", "url": "https://ja.wikipedia.org/wiki/%E9%80%B2%E6%92%83%E3%81%AE%E5%B7%A8%E4%BA%BA", "tags": ["战斗", "奇幻", "ディストピア"]}},
+      "summary": "高墙之内的人类，与墙外的巨人。",
+      "check": [["maybe", 6401, "进击的巨人"], ["no"], ["no"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 205, "title": "电锯人", "name": "チェンソーマン", "aliases": ["链锯人"],
+      "year": 2018, "status": "连载中", "region": "日本", "score": 8.4, "votes": 3500, "rank": 20, "heat": 16000, "vols": 18,
+      "people": [[16, "作者"]],
+      "official": ["少年"],
+      "user": {"恐怖": 30, "热血": 100, "战斗": 150},
+      "pages": {"jawiki": {"title": "チェンソーマン", "url": "https://ja.wikipedia.org/wiki/%E3%83%81%E3%82%A7%E3%83%B3%E3%82%BD%E3%83%BC%E3%83%9E%E3%83%B3", "tags": ["战斗", "悪魔", "ディストピア"]}},
+      "summary": "背着债务的少年和电锯恶魔波奇塔。",
+      "check": [["yes", 6501, "电锯人"], ["no"], ["no"], ["down"]],
+      "cover": true, "precheck": true
+    },
+    {
+      "id": 206, "title": "尸鬼", "name": "屍鬼", "aliases": [],
+      "year": 2008, "status": "已完结", "region": "日本", "score": 8.3, "votes": 900, "rank": 60, "heat": 3000, "vols": 11,
+      "people": [[17, "原作"], [18, "作画"]],
+      "official": ["恐怖", "悬疑"],
+      "user": {},
+      "summary": "外场村接连发生的离奇死亡。",
+      "cover": true
+    },
+    {
+      "id": 207, "title": "漂流教室", "name": "漂流教室", "aliases": [],
+      "year": 1972, "status": "已完结", "region": "日本", "score": 8.6, "votes": 700, "rank": 30, "heat": 2500, "vols": 11,
+      "people": [[19, "作者"]],
+      "official": ["恐怖", "科幻", "校园"],
+      "user": {"神作": 60},
+      "summary": "整座小学被卷进了荒芜的未来。",
+      "cover": true
+    },
+    {
+      "id": 208, "title": "富江", "name": "富江", "aliases": [],
+      "year": 1987, "status": "已完结", "region": "日本", "score": 8.0, "votes": 800, "rank": 100, "heat": 3000, "vols": 3,
+      "people": [[20, "作者"]],
+      "official": ["恐怖"],
+      "user": {"悬疑": 20},
+      "summary": "无论被杀死多少次都会回来的少女。",
+      "cover": true
+    },
+    {
+      "id": 209, "title": "学园孤岛", "name": "がっこうぐらし！", "aliases": ["学园生活"],
+      "year": 2012, "status": "已完结", "region": "日本", "score": 7.7, "votes": 1300, "rank": 300, "heat": 7000, "vols": 12,
+      "people": [[21, "原作"], [22, "作画"]],
+      "official": ["恐怖", "校园", "百合"],
+      "user": {"日常": 20},
+      "pages": {"jawiki": {"title": "がっこうぐらし!", "url": "https://ja.wikipedia.org/wiki/%E3%81%8C%E3%81%A3%E3%81%93%E3%81%86%E3%81%90%E3%82%89%E3%81%97%21", "tags": ["恐怖", "高等学校（舞台）"]}},
+      "summary": "学园生活部的四个人，住在学校里。",
+      "cover": true
+    },
+    {
+      "id": 301, "title": "一人之下", "name": "一人之下", "aliases": [],
+      "year": 2015, "status": "连载中", "region": "中国", "score": 7.5, "votes": 500, "rank": null, "heat": 5000, "vols": 30,
+      "people": [[23, "作者"]],
+      "official": ["奇幻"],
+      "user": {"热血": 50, "战斗": 30},
+      "summary": "异人的世界与守护秘密的少年。",
+      "check": [["yes", 7101, "一人之下"], ["no"], ["no"], ["down"]],
+      "cover": true
+    },
+    {
+      "id": 302, "title": "神之塔", "name": "신의 탑", "aliases": ["Tower of God"],
+      "year": 2010, "status": "连载中", "region": "韩国", "score": 7.6, "votes": 400, "rank": null, "heat": 4000, "vols": null,
+      "people": [[24, "作者"]],
+      "official": ["奇幻", "冒险"],
+      "user": {"战斗": 40},
+      "summary": "为了追上她，少年走进了塔。",
+      "cover": true
+    },
+    {
+      "id": 303, "title": "非人哉", "name": "非人哉", "aliases": [],
+      "year": 2015, "status": "连载中", "region": "中国", "score": 7.9, "votes": 600, "rank": null, "heat": 4500, "vols": null,
+      "people": [[25, "作者"]],
+      "official": ["搞笑"],
+      "user": {"日常": 60},
+      "summary": "神仙妖怪们在现代都市上班。",
+      "region_inferred": true,
+      "cover": false
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# systemd --user unit: the MangaAtlas web app. `uv tool install .` provides ~/.local/bin/manga-atlas.
+[Unit]
+Description=MangaAtlas: browse manga by Bangumi data, read in Suwayomi
+
+[Service]
+ExecStart=%h/.local/bin/manga-atlas serve
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

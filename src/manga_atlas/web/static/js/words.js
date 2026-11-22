@@ -1,0 +1,188 @@
+// All UI copy: terse Chinese, one short line per element.
+
+const numbers = new Intl.NumberFormat('zh-CN');
+export const fmt = (n) => numbers.format(n);
+const pad = (n) => String(n).padStart(2, '0');
+const asDate = (v) => (v instanceof Date ? v : new Date(v));
+export const shortDate = (v) => {
+  const d = asDate(v);
+  return Number.isNaN(d.getTime()) ? '' : `${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+};
+export const clock = (v) => {
+  const d = asDate(v);
+  return Number.isNaN(d.getTime()) ? '' : `${pad(d.getHours())}:${pad(d.getMinutes())}`;
+};
+
+const TAG_STATE = { off: '未选', inc: '已包含', exc: '已排除' };
+
+export const W = {
+  brand: 'MangaAtlas',
+  home: 'MangaAtlas 首页',
+  searchPlaceholder: '搜作品、作者、标签',
+  searchLabel: '搜索',
+  readOnly: '只看能读',
+  favOnly: '只看收藏',
+  // The work page's 收藏 toggle, by state; the star "on" also marks a favorite's card.
+  fav: {
+    label: { off: '收藏', on: '已收藏' },
+    mark: { off: '☆', on: '★' },
+    hint: { off: '按 F 收藏', on: '按 F 取消收藏' },
+  },
+  suwayomi: 'Suwayomi',
+  suwayomiOk: 'Suwayomi 在线',
+  suwayomiDown: 'Suwayomi 连不上',
+  banner: 'Suwayomi 连不上 · 浏览照常，读与检查暂不可用',
+  ext: '↗',
+  outbound: (text) => `${text} ${W.ext}`, // the label of a link out of the app
+
+  filters: '筛选',
+  results: '结果',
+  conditions: '条件',
+  clear: '清除',
+  remove: (label) => `移除 ${label}`,
+  total: (n) => `共 ${fmt(n)} 部`,
+  works: (n) => `${fmt(n)} 部`,
+  sortLabel: '排序',
+  sorts: { rel: '相关', rank: '排名', heat: '热度', score: '评分', date: '日期', fav: '收藏时间' },
+  viewLabel: '视图',
+  views: { grid: '网格', list: '列表' },
+  groups: { genre: '题材', audience: '受众', format: '形式', origin: '来源', tag: '标签' },
+  groupOther: '其他',
+  // Tag sources beside Bangumi: work-page row, facet group, link to the work's page there, credit.
+  sources: {
+    jawiki: {
+      label: '维基',
+      group: '维基',
+      link: '条目',
+      title: (t) => `日文维基「${t}」`,
+      credit: '日文维基 CC BY-SA 4.0',
+    },
+    yurimiru: {
+      label: 'ゆりみる',
+      group: '百合细分',
+      link: '作品页',
+      title: (t) => `ゆりみる「${t}」`,
+      credit: 'ゆりみる',
+    },
+  },
+  region: '地区',
+  status: '状态',
+  year: '年份',
+  score: '评分',
+  more: '更多',
+  less: '收起',
+  any: '不限',
+  scoreMin: (n) => `${n}+`,
+  yearFrom: '起',
+  yearTo: '止',
+  yearFromLabel: '起始年份',
+  yearToLabel: '截止年份',
+  dash: '–',
+  sep: '·',
+  chip: {
+    year: (y) => `年份 ${y}`,
+    score: (n) => `评分 ${n}+`,
+    author: (name) => `作者 ${name}`,
+    credit: (role, name) => `${role} ${name}`, // a publisher, magazine… rather than a creator
+    text: (q) => `「${q}」`,
+  },
+  personFallback: (id) => `#${id}`,
+  authors: (names) => names.join('、'),
+  tagAria: (name, state, n) => `${name}${n != null ? ` ${fmt(n)} 部` : ''}，${TAG_STATE[state]}`,
+  tagNext: { off: '点按包含', inc: '点按排除', exc: '点按取消' },
+  condAria: (name, kind) => `${name}，${TAG_STATE[kind]}，点按切换`,
+  valueAria: (name, n, on) => `${name}${n != null ? ` ${fmt(n)} 部` : ''}${on ? '，已选' : ''}`,
+  mark: { inc: '✓', exc: '−', yes: '✓', maybe: '≈', no: '○', down: '!', pending: '–', stale: '–', remove: '×', plus: '+' },
+  officialTag: '官方',
+  userTag: '用户',
+  related: '相关标签',
+  relatedHint: '同现作品数',
+  commonAuthors: '常见作者',
+  add: (name) => `加入 ${name}`,
+  only: (name) => `只看 ${name}`,
+
+  empty: '无结果',
+  relax: (label, n) => `去掉${label} · ${fmt(n)} 部`,
+  relaxLabel: (label) => `「${label}」`,
+  suwayomiSearch: (q) => `在 Suwayomi 搜「${q}」`,
+  loading: '加载中…',
+  end: '已到底',
+  failed: '加载失败',
+  retry: '重试',
+  checkPage: '检查本页',
+  checkingPage: (done, n) => `检查中 ${done}/${n} · 停止`,
+  checkedAll: '本页已核对',
+  data: (date, n) => `数据 ${date} · ${fmt(n)} 部`,
+  badge: '能读',
+  badgeTitle: { yes: '作者或长书名一致', maybe: '仅书名一致' },
+
+  organize: {
+    title: '整理书架',
+    hint: '应用后写入 Suwayomi 分类，只加不删',
+    fresh: '新建分类',
+    existing: '已有分类',
+    adds: (n) => `加入 ${fmt(n)} 部`,
+    kept: (n) => `${fmt(n)} 部已在`,
+    allIn: '都已在分类里',
+    none: '书架里没有',
+    inCategory: (title) => `${title} ${W.sep} 已在分类里`,
+    unmapped: (n) => `书架里 ${fmt(n)} 部没对上 Bangumi 作品`,
+    nothing: '没有要改动的',
+    apply: '应用',
+    applying: '应用中…',
+    cancel: '取消',
+    close: '关闭',
+    done: (created, added) => `新建 ${fmt(created)} 个分类 ${W.sep} 加入 ${fmt(added)} 部`,
+    open: (name) => `在 Suwayomi 打开「${name}」`,
+    failed: (detail) => (detail ? `整理失败 ${W.sep} ${detail}` : '整理失败'),
+  },
+
+  keys: { enter: 'Enter', tab: 'Tab', shiftEnter: 'Shift+Enter', updown: '↑↓', slash: '/', r: 'R' },
+  suggest: {
+    search: (q) => `搜索「${q}」`,
+    textHint: '文字搜索',
+    groups: { tag: '标签', work: '作品', person: '作者' },
+    include: '加入',
+    exclude: '排除',
+    select: '选择',
+    confirm: '确认',
+  },
+  prefix: { include: '#', exclude: '-#', author: '作者:' },
+  syntaxHint: { include: '标签', exclude: '排除', author: '' },
+
+  work: {
+    back: '返回结果',
+    pos: (i, n) => `第 ${fmt(i)} / ${fmt(n)} 部`,
+    prev: '上一部',
+    next: '下一部',
+    votes: (n) => `${fmt(n)} 人评分`,
+    rank: (n) => `Bangumi 排名 #${n}`,
+    noScore: '暂无评分',
+    vols: (n) => `${n} 卷`,
+    inferred: '推断',
+    expand: '展开',
+    collapse: '收起',
+    tags: '标签',
+    relations: '关联作品',
+    where: '在哪读',
+    readableSources: (n) => `${n} 个源可读`,
+    recheck: '重新检查',
+    read: '读',
+    readLabel: (src) => `在 ${src} 阅读`,
+    rHint: '按 R 阅读',
+    state: { checking: '检查中…', no: '未找到', down: '源不可达', pending: '未返回', stale: '记录已过期' },
+    authorMatch: (t) => (t ? `作者一致「${t}」` : '作者一致'),
+    titleMatch: (t) => (t ? `书名一致「${t}」` : '书名一致'),
+    titleOnly: (t) => (t ? `仅书名一致「${t}」` : '仅书名一致'),
+    otherWork: (t) => `同名不同作「${t}」`,
+    missing: (n, all) => (all ? `${n} 个源都未找到` : `其余 ${n} 个源未找到`),
+    sourceList: (names) => names.join('、'),
+    global: (t) => `在 Suwayomi 全局搜索「${t}」`,
+    aliasSearch: '别名搜',
+    bgm: 'bgm.tv',
+    source: '数据来自 Bangumi',
+    updated: (d) => `更新于 ${d}`,
+    notFound: '无此作品',
+    toResults: '去浏览',
+  },
+};

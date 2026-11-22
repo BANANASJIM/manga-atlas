@@ -1,0 +1,22 @@
+name: Bug report / 问题报告
+description: Something does not work as described. / 有地方和描述的不一样。
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened / 发生了什么
+      description: What you did, what you expected, and what you saw instead. / 做了什么、预期什么、实际看到什么。
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Versions / 版本
+      description: MangaAtlas commit (`git rev-parse --short HEAD`), Suwayomi version, OS. / MangaAtlas 提交、Suwayomi 版本、系统。
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / 日志
+      description: Terminal output or `journalctl --user -u manga-atlas`; remove anything private. / 终端输出或 `journalctl --user -u manga-atlas`，去掉隐私信息。
+      render: text

@@ -1,0 +1,16 @@
+name: Feature request / 功能建议
+description: Suggest something MangaAtlas could do. / 建议 MangaAtlas 能做的事。
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / 想解决什么
+      description: What are you trying to do, and what gets in the way? / 你想做什么，现在卡在哪里？
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea / 想法
+      description: How it could work. MangaAtlas stays local and single-user. / 可以怎么做。MangaAtlas 保持本地、单用户。

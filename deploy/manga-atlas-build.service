@@ -1,0 +1,7 @@
+# systemd --user unit: rebuild atlas.db from the latest Bangumi Archive dump (skips when current).
+[Unit]
+Description=MangaAtlas: rebuild the catalogue
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/manga-atlas build
